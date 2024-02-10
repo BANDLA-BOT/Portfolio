@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="YT LOGO.png" alt="logo" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class=" fas fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>MERN stack web developer</p>
+                <h1>Hi, Im <span>Guru prasad</span> </h1>
+            </div>
+        </div>
+    </div>
+    <!--About-->
+    <div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="user (1).jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, culpa officia quis
+                            veritatis ipsa illum sequi ab molestiae iusto asperiores tempore dicta tenetur, eius esse!
+                            Vitae dicta labore sunt culpa! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Repudiandae, pariatur explicabo magnam voluptates nisi nihil voluptas laborum rerum tempore
+                            fuga ullam inventore voluptatum tempora, doloribus dolor. At quibusdam vitae mollitia.</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('projects' )">Projects</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                             <ul>
+                                <li><span>Web Development</span> <br>Web app Development</li>
+                                <li><span>UI/UX</span> <br>Web/App interface</li>
+                             </ul>
+                            </div>
+                            <div class="tab-contents" id="projects">
+                                <ul>
+                                   <li><span>To-Do List</span> <br>A functional To-Do list</li>
+                                   <li><span>Landing page</span> <br>Responsive Landing page design</li>
+                                   <li><span>Personal Portfolio</span> <br>Responsive Portfolio website</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                   <li><span>BTech - 2023</span> <br>Bapatla Engineering College</li>
+                                   <li><span>Diploma - 2019</span> <br>Pace institutes of technology and sciences</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------services-------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias qui beatae quo neque excepturi autem eum odio nisi perspiciatis suscipit, accusamus consequuntur obcaecati exercitationem magni laboriosam quae aut. Placeat, hic.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web design</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias qui beatae quo neque excepturi autem eum odio nisi perspiciatis suscipit, accusamus consequuntur obcaecati exercitationem magni laboriosam quae aut. Placeat, hic.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------Portfolio------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="todo.jpg">
+                <div class="layer">
+                    <h3>To-Do List</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, facere sequi quia sunt quidem doloribus debitis praesentium quibusdam eos fuga quas minus consectetur mollitia. Facere eum minus nulla vero?</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="port.jpg" class="porto">
+                <div class="layer">
+                    <h3>Personal Portfolio </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, facere sequi quia sunt quidem doloribus debitis praesentium quibusdam eos fuga quas minus consectetur mollitia. Facere eum minus nulla vero?</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Lander pages</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error, facere sequi quia sunt quidem doloribus debitis praesentium quibusdam eos fuga quas minus consectetur mollitia. Facere eum minus nulla vero?</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------Contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>bguru757@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9133714577</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Guru prasad bandla.pdf"  download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form> 
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Guruprasad</p>
+    </div>
+</div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
